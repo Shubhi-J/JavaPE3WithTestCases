@@ -18,10 +18,13 @@ public class MatrixAddition {
             for(int row=0;row<noOfRowsMatrix1;row++){
                 for(int col=0;col<noOfColumnMatrix1;col++){
                     sumOfmatrices[row][col]=matrix1[row][col]+matrix2[row][col];
+                    // input elements of first matrix
                     matrixA=matrixA+matrix1[row][col]+" ";
+                    // input elements of second matrix
                     matrixB=matrixB+matrix2[row][col]+" ";
                     outputMatrix=outputMatrix+ " " +(sumOfmatrices[row][col]);
                 }
+                // after adding first row, add line break
                 outputMatrix=outputMatrix+"\n";
             }
         } else {

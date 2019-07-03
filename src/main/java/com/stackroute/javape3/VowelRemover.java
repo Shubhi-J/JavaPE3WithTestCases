@@ -6,16 +6,15 @@ public class VowelRemover {
         String outputPlace="";
         for (i = 0; i < inputPlaces.length; i++) {
             String place=inputPlaces[i];
+            // pattern to find if the input string is a numeric string
             if(place.matches("-?\\d+(\\.\\d+)?")){
                 outputPlace="input string is a numeric string";
+                // if input is a numeric string, throw error message
                 return outputPlace;
             }
-           // if(!place.matches("a|A|e|E|i|I|o|O|u|U")){
+
+            // replace all vowels
                 outputPlace=outputPlace+"place name without vowel at "+i+" "+place.replaceAll("a|e|i|o|u","")+"\n";
-           // }
-//            else {
-//                outputPlace=outputPlace+"place name without vowel at "+i+" "+place.replaceAll("a|A|e|E|i|I|o|O|u|U","")+"\n";
-//            }
         }
         return outputPlace;
     }

@@ -9,23 +9,17 @@ public class MatrixAdditionTest {
 
     @Before
     public void setUp() {
-        System.out.println("Before");
         objMatrixAddition = new MatrixAddition();
     }
     @After
     public void tearDown () {
-        System.out.println("After");
         objMatrixAddition = null;
     }
 
     @BeforeClass
-    public static void setUpBeforeClass() {
-        System.out.println("BeforeClass");
-    }
+    public static void setUpBeforeClass(){}
     @AfterClass
-    public static void tearDownAfterClass () {
-        System.out.println("AfterClass");
-    }
+    public static void tearDownAfterClass (){}
 
 
     @Test

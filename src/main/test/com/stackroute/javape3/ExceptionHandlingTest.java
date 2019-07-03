@@ -9,23 +9,17 @@ public class ExceptionHandlingTest {
 
     @Before
     public void setUp() {
-        System.out.println("Before");
         objExceptionHandling = new ExceptionHandling();
     }
     @After
     public void tearDown () {
-        System.out.println("After");
         objExceptionHandling = null;
     }
 
     @BeforeClass
-    public static void setUpBeforeClass() {
-        System.out.println("BeforeClass");
-    }
+    public static void setUpBeforeClass(){}
     @AfterClass
-    public static void tearDownAfterClass () {
-        System.out.println("AfterClass");
-    }
+    public static void tearDownAfterClass (){}
 
 
     @Test
